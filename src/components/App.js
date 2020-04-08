@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Route} from 'react-router-dom';
 import RecipeList from "./RecipeList";
 //import "../css/App.css";
 import '../main.css'
@@ -9,7 +10,7 @@ const { v4: uuidv4 } = require('uuid');
 
 
 export default function App() {
-
+  /*
   const [recipes, setRecipes] = useState(sampleRecipes)
 
 
@@ -33,7 +34,7 @@ export default function App() {
   
     setRecipes([...recipes, newRecipe])
   }
-
+  */
 
   return(
     
@@ -54,9 +55,10 @@ export default function App() {
       <header role="banner">
         <h1>Cookbookfs</h1>
       </header>
+      <Route exact path='/' component={RecipeList} />
+      <Route path='/land' component={Landing} />
+      
     </main>
-    <RecipeList recipes={recipes} handleRecipeAdd={handleRecipeAdd} />
-    <Add />
     <footer role="content-info">Footer</footer>
   </body>
   </html>
@@ -66,45 +68,3 @@ export default function App() {
 
 
 
-
-const sampleRecipes = [
-  {
-    id: 1,
-    name: "pasta and chicken",
-    servings: 5,
-    cookTime: "1:45",
-    ingredients: [
-      {
-        id: 1,
-        name: "chicken",
-        amount: "16 oz"
-      },
-      {
-        id: 2,
-        name: "pasta",
-        amount: "15 oz"
-      }
-    ],
-    instructions:
-      "1. Season your chicken.\n2. Put chicken in oven 3. boil your pasta till tender\n4.mix\n5. Enjoy"
-  },
-  {
-    id: 2,
-    name: "latin chicken",
-    servings: 3,
-    cookTime: "2:35",
-    ingredients: [
-      {
-        id: 1,
-        name: "chicken",
-        amount: "5 Lbs"
-      },
-      {
-        id: 2,
-        name: "adobo",
-        amount: "1 can"
-      }
-    ],
-    instructions: "1.season the chicken\n2. put chicken in oven\n3.eat the chicken"
-  }
-];
