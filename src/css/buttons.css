@@ -1,0 +1,30 @@
+.bttn{
+    font-size: 1rem;
+    background: none;
+    font-weight: bold;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-family: Roboto;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.bttn-edit{
+    font-size: inherit;
+    color: blue;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: solid 2px blue;
+    background: none;
+}
+
+.bttn-delete{
+    font-size: inherit;
+    font-weight: bold;
+    color: red;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: solid 2px red;
+    background: none;
+}

@@ -1,0 +1,28 @@
+@import-normalize;
+@import 'buttons.css';
+@import 'ingredientList.css';
+@import 'recipe.css';
+@import 'recipeList.css';
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto:wght@700&display=swap");
+
+
+
+/*
+*, *::before, *::after{
+  font-family: Roboto, Helvetica, sans-serif;
+}
+*/
+
+html{
+  font-size: 20px;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.mr-1{
+
+  margin-right: 5px;
+}
