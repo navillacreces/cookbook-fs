@@ -9,6 +9,11 @@
     border-radius: 5px;
 }
 
+.bttn-new{
+    
+    color: black;
+}
+
 .bttn-edit{
     font-size: inherit;
     color: blue;

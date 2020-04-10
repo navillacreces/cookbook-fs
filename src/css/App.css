@@ -1,9 +1,11 @@
 @import-normalize;
-@import 'buttons.css';
-@import 'ingredientList.css';
-@import 'recipe.css';
 @import 'recipeList.css';
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto:wght@700&display=swap");
+@import 'buttons.css';
+/*@import 'ingredientList.css';*/
+@import 'recipe.css';
+@import 'landing.css'
+@import 'createNew.css'
+
 
 
 
@@ -11,7 +13,6 @@
 *, *::before, *::after{
   font-family: Roboto, Helvetica, sans-serif;
 }
-*/
 
 html{
   font-size: 20px;
@@ -22,7 +23,57 @@ body{
   margin: 0;
 }
 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
 .mr-1{
 
   margin-right: 5px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+header {
+  padding: 12% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.create-new-link{
+  text-decoration: none;
+  color: black;
+  
 }

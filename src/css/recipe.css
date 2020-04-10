@@ -18,7 +18,7 @@
 }
 
 .recipe-name-title{
-    font-family: Roboto;
+    
     
     margin: 0;
     font-size: 1.75rem;
@@ -37,16 +37,22 @@
 .recipe-value{
 
     font-weight: 300;
-
 }
 
 
 .recipe-instructions{
     white-space: pre-wrap;
     line-height: 1.5;
+    
 }
 
 .recipe-value-indnt{
-    margin-top:10px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
 }
+
+.edit-link{
+    color: blue;
+    text-decoration: none;
+}
+

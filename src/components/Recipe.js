@@ -1,6 +1,7 @@
 import React from "react";
 //import { checkPropTypes } from "prop-types";
 import IngredientList from "./IngredientList";
+import {Link } from 'react-router-dom';
 
 export default function Recipe(props) {
   const { id, name, cookTime, servings, instructions, ingredients, handleRecipeDelete } = props;
@@ -10,7 +11,7 @@ export default function Recipe(props) {
       <div className="recipe-header">
         <h3 className="recipe-name-title">{name}</h3>
         <div>
-          <button className="bttn-edit mr-1">Edit</button>
+          <button className="bttn-edit mr-1"><Link to='/edit' className="edit-link">Edit</Link></button>
           <button className="bttn-delete" onClick={() => handleRecipeDelete(id)}>Delete</button>
         </div>
       </div>
@@ -29,8 +30,7 @@ export default function Recipe(props) {
       <div>
         <span className="recipe-label" >Ingredients:</span>
         <div className="recipe-value recipe-value-indnt">
-          {" "}
-          <IngredientList ingredients={ingredients} />{" "}
+          <IngredientList ingredients={ingredients} />
         </div>
       </div>
     </div>

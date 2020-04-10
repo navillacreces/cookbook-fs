@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import {Route} from 'react-router-dom';
 import RecipeList from "./RecipeList";
-//import "../css/App.css";
-import '../main.css'
+import CreateNew from './CreateNew';
+import '../css/App.css'
 import Add from './Add'
-import Landing from '../Landing'
+import Landing from './Landing';
+import RecipeEdit from './RecipeEdit';
+import Recipe from './Recipe';
+
 const { v4: uuidv4 } = require('uuid');
 
 
@@ -55,9 +58,11 @@ export default function App() {
       <header role="banner">
         <h1>Cookbookfs</h1>
       </header>
-      <Route exact path='/' component={RecipeList} />
-      <Route path='/land' component={Landing} />
-      
+      <Route exact path='/' component={Landing} />
+      <Route path='/cookbook' component={RecipeList} />
+      <Route path='/createNew' component={CreateNew} />
+      <Route path='/edit' component={RecipeEdit} />
+      <Route path='/addRecipe' component={Add} />
     </main>
     <footer role="content-info">Footer</footer>
   </body>

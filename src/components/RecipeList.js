@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Add from './Add';
 import Recipe from "./Recipe";
+import {Link} from 'react-router-dom';
 
 export default function RecipeList(props) {
  
@@ -10,13 +11,13 @@ export default function RecipeList(props) {
 
   return (
     <div className="recipe-list">
-     
+     <Link to='/addRecipe' className="add-new-link">Add a new Recipe</Link>
       <div>
         {recipes.map(recipe => {
           return <Recipe key={recipe.id}  {...recipe} />;
         })}
       </div>
-      <Add />
+      
     </div>
   );
 }
@@ -40,7 +41,7 @@ const sampleRecipes = [
       }
     ],
     instructions:
-      "1. Season your chicken.\n2. Put chicken in oven 3. boil your pasta till tender\n4.mix\n5. Enjoy"
+      "1. Season your chicken.\n2. Put chicken in oven \n3. boil your pasta till tender\n4.mix\n5. Enjoy"
   },
   {
     id: 2,

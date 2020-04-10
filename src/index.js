@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
-//import Landing from './Landing';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
@@ -10,7 +9,12 @@ ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>   
-  </React.StrictMode>,
+  </React.StrictMode>
+ ,
   document.getElementById('root')
 );
+
+
+
+ 
 
