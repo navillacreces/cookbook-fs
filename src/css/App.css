@@ -43,7 +43,7 @@ body {
   padding: 0;
   margin: 0;
 }
-
+/*
 nav,
 footer {
   padding: 1% 0;
@@ -57,11 +57,14 @@ nav {
   right: 0;
   z-index: 10;
 }
-
+*/
+h1,h6{
+  color: #02182b;
+}
 header {
   padding: 12% 0;
 }
-
+/*
 section {
   min-height: 200px;
   padding: 6% 0;
@@ -71,9 +74,17 @@ section {
 section:nth-child(even) {
   background-color: #ddd;
 }
+*/
 
+
+.landing-section,.new-account-form{
+  background-color: #68c5db;
+  height: 450px;
+  padding-top: 40px;
+}
 .create-new-link{
   text-decoration: none;
   color: black;
   
 }
+

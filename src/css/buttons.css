@@ -33,3 +33,18 @@
     border: solid 2px red;
     background: none;
 }
+
+.bttn-sign-in, .bttn-new-account,.bttn-new{
+
+    background-color: #0197f6;
+    
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 4px 2px;
+    border-radius: 8px;
+}
